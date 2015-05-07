@@ -1,0 +1,42 @@
+#logo {
+	width: 122px;
+	height: 43.5px;
+}
+h2 {
+	margin-bottom: 12px !important;
+}
+
+.audio-icon {
+	text-align: right;
+}
+.audio-icon img {
+	margin-top: 2px;
+	width: 16px;
+	height: 16px;
+}
+
+.song-row:nth-child(even) {
+	background-color: #F7F7F7;
+}
+.song-row:nth-child(odd) {
+	background-color: #FCFCFC;
+}
+.song-row:hover {
+	background-color: #DFDFDF;
+}
+.song-row.has-link {
+	cursor: pointer;
+}
+.song-row.has-link:hover {
+	background-color: #DDF;
+}
+.song-row.has-link:active {
+	background-color: #66F;
+	color: #FFF;
+	font-weight: 400;
+}
+
+.song-number {
+	text-align: right;
+	padding-right: 0px !important;
+}
