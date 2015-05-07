@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acklen Hymnal Index</title>
+    <link href="songbook.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div>
+        <img src="/images/acklen_logo.jpg" alt="Acklen Avenue Church of Christ" width="244" height="87"/>
+      </div>
+      <h2>Supplemental Hymnal Index</h2>
+
+      <div class="row">
+        <table class="table">
+          <tbody data-bind="foreach: songlist">
+            <tr class="song-row" data-bind="css: { 'has-link': link }">
+              <td class="audio-icon">
+                <img src="/images/audio-icon.png" data-bind="visible: link" />
+              </td>
+              <td class="song-number">
+                <span data-bind="text: number"></span>.
+              </td>
+              <td class="song-title" data-bind="text: title, click: openSongLink"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      var model = {};
+      model.songlist = ko.observableArray([
+        {
+          "number": 1,
+          "title": "All Life Comes from Thee",
+          "link": "http://kleinwood.com/annual-singing/2013/08/02/all-life-comes-from-thee"
+        },
+        {
+          "number": 2,
+          "title": "Ancient Words",
+          "link": "https://www.youtube.com/watch?v=viej19PNN8M"
+        },
+        {
+          "number": 3,
+          "title": "And Can It Be?",
+          "link": "https://www.youtube.com/watch?v=gemjdkUmrzg"
+        },
+        {
+          "number": 4,
+          "title": "Another Year is Dawning",
+          "link": ""
+        },
+        {
+          "number": 5,
+          "title": "As the Deer (Jernigan)",
+          "link": "https://www.youtube.com/watch?v=TP5IRVIIrj4"
+        },
+        {
+          "number": 6,
+          "title": "Be Holy, For I Am Holy",
+          "link": "https://www.youtube.com/watch?v=rlShYtS1_GE"
+        },
+        {
+          "number": 7,
+          "title": "As the Deer (Nystrom)",
+          "link": "http://kleinwood.com/annual-singing/2008/08/01/as-the-deer"
+        },
+        {
+          "number": 8,
+          "title": "Before the Throne of God Above",
+          "link": "https://www.youtube.com/watch?v=mTW2Q85SNGE"
+        },
+        {
+          "number": 9,
+          "title": "Blessed Be the Lord God Almighty",
+          "link": ""
+        },
+        {
+          "number": 10,
+          "title": "Break My Heart",
+          "link": "https://www.youtube.com/watch?v=5NK3mJgjxFw"
+        },
+        {
+          "number": 11,
+          "title": "Brethren We Have Met to Worship",
+          "link": "https://www.youtube.com/watch?v=fSy6ZaTXx_k"
+        },
+        {
+          "number": 12,
+          "title": "Change My Heart O God",
+          "link": ""
+        },
+        {
+          "number": 13,
+          "title": "Come and Fill Our Hearts",
+          "link": ""
+        },
+        {
+          "number": 14,
+          "title": "Come Let Us Worship and Bow Down",
+          "link": ""
+        },
+        {
+          "number": 15,
+          "title": "Come, King of Kings",
+          "link": "http://kleinwood.com/annual-singing/2004/08/06/come-king-of-kings"
+        },
+        {
+          "number": 16,
+          "title": "Come to the Table",
+          "link": "https://www.youtube.com/watch?v=7zMn9ttpsVQ"
+        },
+        {
+          "number": 17,
+          "title": "Covenant of Love",
+          "link": "https://www.youtube.com/watch?v=hJNsPUDWtzI"
+        },
+        {
+          "number": 18,
+          "title": "Create in Me a Clean Heart",
+          "link": "https://www.youtube.com/watch?v=QJD7e6kILYo"
+        },
+        {
+          "number": 19,
+          "title": "Every Time",
+          "link": "https://www.youtube.com/watch?v=4v8aMSVHZl8"
+        },
+        {
+          "number": 20,
+          "title": "Exalted",
+          "link": "https://www.youtube.com/watch?v=X_h5eVzJLko"
+        },
+        {
+          "number": 21,
+          "title": "Father, God",
+          "link": "https://www.youtube.com/watch?v=Ufr17007ZOg"
+        },
+        {
+          "number": 22,
+          "title": "Faithful Love",
+          "link": "http://kleinwood.com/annual-singing/2013/08/02/faithful-love"
+        },
+        {
+          "number": 23,
+          "title": "Father",
+          "link": ""
+        },
+        {
+          "number": 24,
+          "title": "The Feast of Love",
+          "link": "https://www.youtube.com/watch?v=RV07Tki5IAU"
+        },
+        {
+          "number": 25,
+          "title": "Firm Foundation",
+          "link": ""
+        },
+        {
+          "number": 26,
+          "title": "Great Are You Lord",
+          "link": "https://www.youtube.com/watch?v=whZynWvZOW0"
+        },
+        {
+          "number": 27,
+          "title": "The Greatest Commands",
+          "link": "https://www.youtube.com/watch?v=aQsoErP7sTE"
+        },
+        {
+          "number": 28,
+          "title": "Had It Not Been the Lord",
+          "link": "https://www.youtube.com/watch?v=lwsBH6L4zXk"
+        },
+        {
+          "number": 29,
+          "title": "He Is Wonderful",
+          "link": "https://www.youtube.com/watch?v=UV-zk8lUjg0"
+        },
+        {
+          "number": 30,
+          "title": "Heart of a Servant",
+          "link": ""
+        },
+        {
+          "number": 31,
+          "title": "Hear O Israel",
+          "link": "http://kleinwood.com/annual-singing/2013/08/02/hear-o-israel"
+        },
+        {
+          "number": 32,
+          "title": "Here I Am to Worship",
+          "link": "https://www.youtube.com/watch?v=Y6g62Y0RvAg"
+        },
+        {
+          "number": 33,
+          "title": "Hide Me Away O Lord",
+          "link": "https://www.youtube.com/watch?v=6qja5SURGRE"
+        },
+        {
+          "number": 34,
+          "title": "Highest Place",
+          "link": "http://kleinwood.com/annual-singing/2011/08/05/highest-place"
+        },
+        {
+          "number": 35,
+          "title": "Holy Rest",
+          "link": ""
+        },
+        {
+          "number": 36,
+          "title": "Hosanna You're My King",
+          "link": "https://www.youtube.com/watch?v=ugODXiicHrI"
+        },
+        {
+          "number": 37,
+          "title": "How Long till the Morning?",
+          "link": "https://www.youtube.com/watch?v=ZLrJ12Womlg"
+        },
+        {
+          "number": 38,
+          "title": "I Am a Sheep",
+          "link": "https://www.youtube.com/watch?v=crRVnMANfd8"
+        },
+        {
+          "number": 39,
+          "title": "Holy to the Lord",
+          "link": "http://kleinwood.com/annual-singing/2008/08/01/holy-to-the-lord"
+        },
+        {
+          "number": 40,
+          "title": "How Deep the Father's Love for Us",
+          "link": "https://www.youtube.com/watch?v=26p1D4Ie4jQ"
+        },
+        {
+          "number": 41,
+          "title": "I Pledge Allegiance to the Lamb",
+          "link": ""
+        },
+        {
+          "number": 42,
+          "title": "I Sing Praises",
+          "link": ""
+        },
+        {
+          "number": 43,
+          "title": "I Will Wake the Dawn with Praises",
+          "link": "https://www.youtube.com/watch?v=cppCoJDlGJw"
+        },
+        {
+          "number": 44,
+          "title": "In Christ Alone",
+          "link": "https://www.youtube.com/watch?v=QekPh9XfhM0"
+        },
+        {
+          "number": 45,
+          "title": "In Moments Like These",
+          "link": ""
+        },
+        {
+          "number": 46,
+          "title": "In the Lord I'll Be Ever Thankful",
+          "link": ""
+        },
+        {
+          "number": 47,
+          "title": "Let All Mortal Flesh Keep Silence",
+          "link": ""
+        },
+        {
+          "number": 48,
+          "title": "Light the Fire",
+          "link": "https://www.youtube.com/watch?v=Bp1Pij0po2k"
+        },
+        {
+          "number": 49,
+          "title": "Lord, Be Glorified",
+          "link": ""
+        },
+        {
+          "number": 50,
+          "title": "Lord, Be There",
+          "link": "https://www.youtube.com/watch?v=xD3zl3uW29E"
+        },
+        {
+          "number": 51,
+          "title": "Lord, Reign in Me",
+          "link": "https://www.youtube.com/watch?v=W23qcAXcQ5w"
+        },
+        {
+          "number": 52,
+          "title": "Lord, Take Control",
+          "link": "https://www.youtube.com/watch?v=bBUyFG9ud-4"
+        },
+        {
+          "number": 53,
+          "title": "Magnificat",
+          "link": "https://www.youtube.com/watch?v=6F33Y7OgXzM"
+        },
+        {
+          "number": 54,
+          "title": "Make Me a Servant",
+          "link": "https://www.youtube.com/watch?v=V9YFQz6yMbQ"
+        },
+        {
+          "number": 55,
+          "title": "My Eyes Are Dry",
+          "link": ""
+        },
+        {
+          "number": 56,
+          "title": "My Gracious Redeemer I Love",
+          "link": ""
+        },
+        {
+          "number": 57,
+          "title": "My Only Hope Is You",
+          "link": "http://kleinwood.com/annual-singing/2012/08/03/my-only-hope-is-you"
+        },
+        {
+          "number": 58,
+          "title": "O Lord and Master of My Life",
+          "link": ""
+        },
+        {
+          "number": 59,
+          "title": "O Magnify My Master",
+          "link": "http://kleinwood.com/annual-singing/2012/08/03/o-magnify-my-master"
+        },
+        {
+          "number": 60,
+          "title": "Prince of Peace",
+          "link": "https://www.youtube.com/watch?v=KR8ciL2XHFw"
+        },
+        {
+          "number": 61,
+          "title": "Pierce My Ear",
+          "link": "https://www.youtube.com/watch?v=rPeuNf5jK9s"
+        },
+        {
+          "number": 62,
+          "title": "Resurrection",
+          "link": "https://www.youtube.com/watch?v=UyJ4F9bldoU"
+        },
+        {
+          "number": 63,
+          "title": "Sanctuary",
+          "link": "http://kleinwood.com/annual-singing/2007/08/03/sanctuary"
+        },
+        {
+          "number": 64,
+          "title": "Shine on Us",
+          "link": "https://www.youtube.com/watch?v=tTK4PTyRdNY"
+        },
+        {
+          "number": 65,
+          "title": "Song for the Nations",
+          "link": ""
+        },
+        {
+          "number": 66,
+          "title": "Still",
+          "link": "https://www.youtube.com/watch?v=4nVoLQ_fiNo"
+        },
+        {
+          "number": 67,
+          "title": "Spirit of the Living God",
+          "link": ""
+        },
+        {
+          "number": 68,
+          "title": "Surround Us, O Lord",
+          "link": "https://www.youtube.com/watch?v=kXFUCe4S3BY"
+        },
+        {
+          "number": 69,
+          "title": "There Is a Redeemer",
+          "link": "https://www.youtube.com/watch?v=Y7QUsn_icjY"
+        },
+        {
+          "number": 70,
+          "title": "We Bring the Sacrifice of Praise",
+          "link": ""
+        },
+        {
+          "number": 71,
+          "title": "That's Why We Praise Him",
+          "link": "https://www.youtube.com/watch?v=485D-wg6ihg"
+        },
+        {
+          "number": 72,
+          "title": "We Fall Down",
+          "link": "https://www.youtube.com/watch?v=ZSDnt8ZYjJU"
+        },
+        {
+          "number": 73,
+          "title": "What the Lord Has Done in Me",
+          "link": "https://www.youtube.com/watch?v=VhwVvQpAMMU"
+        },
+        {
+          "number": 74,
+          "title": "When I Shall Reach the More Excellent Glory",
+          "link": ""
+        },
+        {
+          "number": 75,
+          "title": "Wonderful Merciful Savior",
+          "link": "https://www.youtube.com/watch?v=vWFyGEgFzFc"
+        },
+        {
+          "number": 76,
+          "title": "You're the One",
+          "link": "https://www.youtube.com/watch?v=hQCEKhk2eo0"
+        },
+        {
+          "number": 77,
+          "title": "Worthy the Lamb That Was Slain",
+          "link": ""
+        },
+        {
+          "number": 200,
+          "title": "O Come, O Come, Emmanuel",
+          "link": ""
+        },
+        {
+          "number": 201,
+          "title": "To Us a Child of Hope Is Born",
+          "link": ""
+        },
+        {
+          "number": 202,
+          "title": "It Came Upon the Midnight Clear",
+          "link": ""
+        },
+        {
+          "number": 203,
+          "title": "Come Thou Long Expected Jesus",
+          "link": ""
+        },
+        {
+          "number": 204,
+          "title": "O Holy Night",
+          "link": ""
+        },
+        {
+          "number": 205,
+          "title": "Joy to the World",
+          "link": ""
+        },
+        {
+          "number": 206,
+          "title": "Hark! the Herald Angels Sing",
+          "link": ""
+        },
+        {
+          "number": 207,
+          "title": "Go Tell it on the Mountain",
+          "link": ""
+        },
+        {
+          "number": 208,
+          "title": "The First Noel",
+          "link": ""
+        },
+        {
+          "number": 209,
+          "title": "What Child is This?",
+          "link": ""
+        },
+        {
+          "number": 210,
+          "title": "Angels We Have Heard on High",
+          "link": ""
+        },
+        {
+          "number": 211,
+          "title": "O Come All Ye Faithful",
+          "link": ""
+        },
+        {
+          "number": 212,
+          "title": "Silent Night",
+          "link": ""
+        },
+        {
+          "number": 213,
+          "title": "Hail the Blest Morn",
+          "link": "https://www.youtube.com/watch?v=1UMDKDJ3BR4"
+        },
+        {
+          "number": 214,
+          "title": "Lord Christ Beneath Thy Starry Dome",
+          "link": ""
+        },
+        {
+          "number": 215,
+          "title": "O Little Town of Bethlehem",
+          "link": ""
+        },
+        {
+          "number": 216,
+          "title": "On Jordan's Bank the Baptist's Cry",
+          "link": ""
+        },
+        {
+          "number": 217,
+          "title": "Once in Royal David's City",
+          "link": "https://www.youtube.com/watch?v=JA6eYA4NzHY"
+        },
+        {
+          "number": 218,
+          "title": "People Look East",
+          "link": "https://www.youtube.com/watch?v=pX81DEuIjHk"
+        },
+        {
+          "number": 219,
+          "title": "Rejoice, Rejoice Believers",
+          "link": ""
+        },
+      ]);
+
+      function openSongLink(song) {
+        if (song.link != "") window.open(song.link, '_blank');
+      }
+
+      $(document).ready(function () {
+        ko.applyBindings(model);
+      });
+
+    </script>
+
+  </body>
+</html>
