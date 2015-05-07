@@ -21,14 +21,14 @@
       <div class="row">
         <table class="table">
           <tbody data-bind="foreach: songlist">
-            <tr class="song-row" data-bind="css: { 'has-link': link }">
+            <tr class="song-row" data-bind="css: { 'has-link': link }, click: openSongLink">
               <td class="audio-icon">
                 <img src="/images/audio-icon.png" data-bind="visible: link" />
               </td>
               <td class="song-number">
                 <span data-bind="text: number"></span>.
               </td>
-              <td class="song-title" data-bind="text: title, click: openSongLink"></td>
+              <td class="song-title" data-bind="text: title"></td>
             </tr>
           </tbody>
         </table>
