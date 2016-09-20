@@ -279,9 +279,9 @@ div#slideshow ul#slide_nav {
     z-index:100;
     top: 0px;
     left: 0px;
-    height:500px;
-    width:650px;
-    background: #fff;
+    height:100%;
+    width:100%;
+    background: #000;
     display:none;
 }
 #la-message {
