@@ -1,17 +1,27 @@
 $(document).ready(function() {
-$("#slideshow").css("overflow", "hidden");
+	var dayAfterChurch = new Date(2016,9,26),
+		today = new Date();
 
-$("ul#slides").cycle({
-	fx: 'fade',
-	pause: 1,
-	prev: '#prev',
-	next: '#next'
-});
+	$("#slideshow").css("overflow", "hidden");
 
-$("#slideshow").hover(function() {
-	$("ul#slide_nav").fadeIn();
-	},
-		function() {
-	$("ul#slide_nav").fadeOut();
+	$("ul#slides").cycle({
+		fx: 'fade',
+		pause: 1,
+		prev: '#prev',
+		next: '#next'
 	});
+
+	$("#slideshow").hover(
+	function() {
+		$("ul#slide_nav").fadeIn();
+	},
+	function() {
+		$("ul#slide_nav").fadeOut();
+	});
+
+	if (today < dayAfterChurch) {
+		$("body").leanModal({ top : 200, overlay : 0.4, closeButton: ".modal_close" });
+		$("body").trigger("click");
+		$("body").off("click");
+	}
 });
