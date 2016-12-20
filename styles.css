@@ -285,8 +285,8 @@ div#slideshow ul#slide_nav {
     display:none;
 }
 #la-message {
-    width: 650px;
-    height: 500px;
+    width: 500px;
+    height: 150px;
 	padding: 30px; 
     display:none;
 	background: #FFF;
