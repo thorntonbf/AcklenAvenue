@@ -34,8 +34,6 @@ html{
 	text-align: right;
 	font-size: 14px;
 }
-#nav ul {
-}
 #nav li {
 	display: inline;
 	padding-left: 39px;
@@ -79,8 +77,6 @@ html{
 #content a {
 	color: #ECA729;
 	text-decoration: none;
-}
-#content a:hover {
 }
 #content strong {
 	color: #969183;
@@ -136,32 +132,32 @@ div#slideshow ul#slide_nav {
 	list-style-type: none;
 	list-style-image: none;
 }
-	div#slideshow ul#slide_nav li#prev {
+div#slideshow ul#slide_nav li#prev {
 	float: left;
 	margin: 0 0 0 20px;
-	}
-	div#slideshow ul#slide_nav li#next {
+}
+div#slideshow ul#slide_nav li#next {
 	float: right;
 	margin: 0 22px 0 0;
-	}
-	div#slideshow ul#slide_nav li a {
+}
+div#slideshow ul#slide_nav li a {
 	display: block;
 	width: 45px;
 	height: 45px;
-	}
-		div#slideshow ul#slide_nav li#prev a {
-			background: url(images/prev.png);
-		}
-		div#slideshow ul#slide_nav li#next a {
-			background: url(images/next.png);
-		}
+}
+div#slideshow ul#slide_nav li#prev a {
+	background: url(images/prev.png);
+}
+div#slideshow ul#slide_nav li#next a {
+	background: url(images/next.png);
+}
 
-	div#slideshow ul#slides {
-		list-style: none;
-	}
-		div#slideshow ul#slides li {
+div#slideshow ul#slides {
+	list-style: none;
+}
+div#slideshow ul#slides li {
 	margin: 0 0 20px 0;
-		}
+}
 #box_wrap {
 	float: left;
 	width: 960px;
@@ -237,8 +233,6 @@ div#slideshow ul#slide_nav {
 	float: right;
 	width: 600px;
 	text-align: right;
-}
-#footer_nav ul{
 }
 #footer_nav li{
 	display: inline;
