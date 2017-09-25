@@ -4,25 +4,39 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Acklen Avenue Church of Christ</title>
-  <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<style>
+.navbar {
+    border-bottom-width: 3px;
+    border-bottom-color: #CC9;
+    border-bottom-style: solid;
+}
+</style>
 </head>
 
 
 <body>
-  <div id="wrapper">
-    <div id="logo"><img src="images/acklen_logo.jpg" width="244" height="87" alt="Acklen Avenue Church of Christ" /></div>
-    <div id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who.html">Who We Are</a></li>
-        <li><a href="community.html">Community Life</a></li>
-        <li><a href="location.html">Visit Us</a></li>
-      </ul>
-    </div>
-    <div id="container_interior">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-md navbar-light">
+  <a class="navbar-brand" style="max-width: 50%;" href="#"><img class="img-fluid" alt="Acklen Logo" src="images/acklen_logo.jpg"></a>
+  <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse align-self-end" id="navbarSupportedContent">
+    <ul class="navbar-nav w-100 justify-content-end">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="who.html">Who We Are</a></li>
+        <li class="nav-item active"><a class="nav-link" href="community.html">Community Life</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html">Location &amp; Service Times</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container-fluid p-4">
       <div id="content">
         <h1>Community Life</h1>
         <h2>Ways to Connect:</h2>
@@ -83,28 +97,34 @@
               <a href="http://archive.tennessean.com/article/DN/20131208/NEWS01/312080071/Lipscomb-students-female-prisoners-share-classes-life-lessons">LIFE Program-TN Prison for Women</a></p>
 
             <h2>Pictures</h2>
-            <p> <img src="images/community/01.jpg" /><br/><br/>
-              <img src="images/community/03.jpg" /><br/><br/>
+            <p> <img class="img-fluid" src="images/community/01.jpg" /><br/><br/>
+              <img class="img-fluid" src="images/community/03.jpg" /><br/><br/>
               <br/></p>
       </div>
     </div>
   </div>
-  <div id="footer_wrap">
-    <div id="footer">
-      <div id="footer_icons">
-        <a href="http://www.facebook.com/groups/2344458711/" target="_blank"><img src="images/icon_facebook.gif" alt="Facebook" width="32" height="32" border="0" class="icon_pad" /></a>
-      </div>
-      <div id="footer_nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="who.html">Who We Are</a></li>
-          <li><a href="community.html">Community Life</a></li>
-          <li><a href="location.html">Visit Us</a></li>
-        </ul>
-      </div>
-      <div id="footer_copyright">© 2012 Acklen Avenue Church of Christ <strong><a href="https://www.google.com/maps/place/900+Acklen+Ave,+Nashville,+TN+37203/@36.134273,-86.782359,7885m/data=!3m1!1e3!4m5!3m4!1s0x886466800df13e37:0x44e9a64f3aec173a!8m2!3d36.1342847!4d-86.7824671">900 Acklen Avenue Nashville, TN 37203</a></strong><a href="mailto:info@acklen.org">Contact Us</a></div>
+<footer class="bd-footer text-white" style="background-color: #383322;">
+  <div id="container-fluid">
+        <div class="row p-4">
+        <div class="col-1 d-flex justify-content-center">
+                <a href="http://www.facebook.com/groups/2344458711/" target="_blank"><img src="images/icon_facebook.gif" alt="Facebook" width="32" height="32" border="0" class="icon_pad" /></a>
+        </div>
+        <div class="col-11">
+                 <div class="row">
+                         <div class="col-lg-5 d-flex justify-content-end">
+                         © 2012 Acklen Avenue Church of Christ<br/>
+                        </div>
+                         <div class="col-lg-5 d-flex justify-content-end">
+                         <strong>900 Acklen Avenue Nashville, TN 37203</strong><br/>
+                        </div>
+                         <div class="col-lg-2 d-flex justify-content-end">
+                         <a href="mailto:info@acklen.org">Contact Us</a></p>
+                        </div>
+                </div>
+        </div>
     </div>
-  </div>
+
+</footer>
 </body>
 
 </html>
