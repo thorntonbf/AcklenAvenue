@@ -8,7 +8,7 @@
 
                 */
 /* ---------------- 01. RESET STYLES ---------------- */
-wrapper, body, div, p, h1, h2, h3, h4, h5, h6, ul, li, form, fieldset {margin:0;padding:0;}
+/* wrapper, body, div, p, h1, h2, h3, h4, h5, h6, ul, li, form, fieldset {margin:0;padding:0;}
 html{
 	color:#7D796E;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -118,7 +118,7 @@ html{
 	padding-bottom: 7px;
 }
 div#slideshow {
-	overflow: scroll; /* Allows the slides to be viewed using scrollbar if Javascript isn't available */
+	overflow: scroll; 
 	position: relative;
 	z-index: 5;
 	height: 361px;
@@ -290,9 +290,40 @@ div#slideshow ul#slides li {
     box-shadow: 0px 0px 4px rgba(0,0,0,0.7); 
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); 
     -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+} */
 
-
+.brown-background {
+	background-color: #383322;
 }
 
+.footer-rowed {
+	padding-top: 15px; padding-bottom:15px;margin-left:0px;margin-right:0px;
+}
 
+.navbar {
+    border-bottom-width: 3px;
+    border-bottom-color: #CC9;
+    border-bottom-style: solid;
+}
 
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; /* This is the aspect ratio */
+	height: 0;
+	overflow: hidden;
+ }
+ .google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+ }
+
+ .expanded-top-and-bottom-space {
+	padding-top:50px;padding-bottom:50px;
+ }
+
+ .stunted-width {
+	 max-width: 960px;
+ }
